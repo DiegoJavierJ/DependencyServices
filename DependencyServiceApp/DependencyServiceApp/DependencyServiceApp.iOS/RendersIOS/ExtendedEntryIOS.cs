@@ -10,10 +10,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 
-[assembly: ExportRenderer(typeof(EntryRenderer), typeof(RenderIOS))]
+[assembly: ExportRenderer(typeof(EntryRenderer), typeof(ExtendedEntryIOS))]
 namespace DependencyServiceApp.iOS
 {
-    public class RenderIOS : EntryRenderer
+    public class ExtendedEntryIOS : EntryRenderer
     {
         protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
         {
@@ -25,7 +25,7 @@ namespace DependencyServiceApp.iOS
                 Control.BorderStyle = UITextBorderStyle.Line;
             }
         }
-        public RenderIOS()
+        public ExtendedEntryIOS()
         {
 
         }
