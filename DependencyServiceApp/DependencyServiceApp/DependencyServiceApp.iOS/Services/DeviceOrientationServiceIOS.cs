@@ -9,10 +9,8 @@ using Xamarin.Forms.Internals;
 [assembly: Xamarin.Forms.Dependency(typeof(DependencyServiceApp.iOS.Services.DeviceOrientationServiceIOS))]
 namespace DependencyServiceApp.iOS.Services
 {
-    public class DeviceOrientationServiceIOS
+    public class DeviceOrientationServiceIOS : IDeviceOrientation
     {
-        public class DeviceOrientationService : IDeviceOrientation
-        {
             public DeviceOrientation GetOrientation()
             {
                 UIInterfaceOrientation orientation = UIApplication.SharedApplication.StatusBarOrientation;
@@ -21,6 +19,5 @@ namespace DependencyServiceApp.iOS.Services
                     orientation == UIInterfaceOrientation.PortraitUpsideDown;
                 return isPortrait ? DeviceOrientation.Portrait : DeviceOrientation.Landscape;
             }
-        }
     }
 }
