@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using Android.Widget;
 using DependencyServiceApp.iOS.Effects;
 using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
-
+[assembly: ResolutionGroupName("DependencyServiceApp")]
+[assembly: ExportEffect(typeof(IOSEntryColor), "ColorEffect")]
 namespace DependencyServiceApp.iOS.Effects
 {
     public class IOSEntryColor : PlatformEffect

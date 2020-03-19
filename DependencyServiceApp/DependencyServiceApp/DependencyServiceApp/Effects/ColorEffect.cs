@@ -7,7 +7,7 @@ namespace DependencyServiceApp.Effects
 {
     public class ColorEffect : RoutingEffect
     {
-        public ColorEffect() : base ("DependensyServiceApp.ColorEffect")
+        public ColorEffect() : base ("DependencyServiceApp.ColorEffect")
         {
         }
     }

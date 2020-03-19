@@ -12,7 +12,7 @@ using Android.Widget;
 using DependencyServiceApp.Droid.Effects;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-[assembly: ResolutionGroupName("DependensyServiceApp")]
+[assembly: ResolutionGroupName("DependencyServiceApp")]
 [assembly: ExportEffect(typeof(DroidEntryColor), "ColorEffect")]
 namespace DependencyServiceApp.Droid.Effects
 {
